@@ -7,7 +7,8 @@
     "start": "node src/server.js",
     "prisma:generate": "prisma generate",
     "prisma:dev": "prisma migrate dev --name init",
-    "prisma:deploy": "prisma migrate deploy"
+    "prisma:deploy": "prisma migrate deploy",
+    "postinstall": "chmod +x node_modules/.bin/prisma"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
